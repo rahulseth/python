@@ -5,3 +5,4 @@
 # Install pipenv 
        pip3 install pipenv  
        pipenv run python <python_file.py>
+	   pipenv -d install ipython (Require python when developing app)

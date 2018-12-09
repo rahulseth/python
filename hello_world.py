@@ -1,17 +1,23 @@
-print("hello world")
+# install Package
+import requests
 
-# Conditional statement
-num1 = 10
-num2 = 20
-if (num1 > num2):
-    print("If clause block executed")
-else:
-    print("Else clause block executed")
+# For reusability of status_code
 
-# loop in Python
-while num1 < num2:
-    print(num1)
-    num1 = num1 + 10
+if __name__ == '__main__':
+    print("hello world")
+
+    # Conditional statement
+    num1 = 10
+    num2 = 20
+    if (num1 > num2):
+        print("If clause block executed")
+    else:
+        print("Else clause block executed")
+
+    # loop in Python
+    while num1 < num2:
+        print(num1)
+        num1 = num1 + 10
 
 # custom function
 def mymatch():
@@ -27,3 +33,9 @@ def mymatch():
            print("Looking")
 
 mymatch()
+
+# Request
+res = requests.get('http://data.nasa.gov/resource/y77d-th95.json')
+print(res.status_code)
+#print(res.text)
+print(res.json())
