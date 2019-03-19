@@ -31,4 +31,4 @@ def retrieve_all_record_dynamodb():
 def lambda_handler(event, context):
     retrieve_single_record_dynamodb()
     retrieve_all_record_dynamodb()
-    return "Insert Completed"
+    return "operation Completed"
